@@ -1,0 +1,38 @@
+rails generate 
+	controller [nom du controller] [vue vue vue ...]
+	scaffold [nom de la table au singulier] [colonne:type]
+
+
+Mettre une autre page en /
+config > routes.rb
+	root '[controller]#[fonction]'
+
+
+créer un lien
+	<%= link_to ["Texte du lien"], [path trouvable sur un 404] -%> 
+
+partial
+	commence par _
+	render avec <%= render ["path du partial sans le _ ou l'extension"] -%>
+
+voire les routes
+	rake routes
+
+lancer les migrations
+	rake db:migrate
+
+options de migrations
+	default: nil/0/autre
+	null: false empeche les nulls
+
+différence rails/rake
+	rails crée (generation de page, scaffold, etc), rake lance une tache (migration, show routes)
+
+contraintes de validations
+	se fait dans le modele
+	validates :[colonne], [contrainte]
+
+voire offers_controller, _form.html.erb et offer.rb (controller, model et vue)
+
+créer une migration
+	rails g migration [nom]

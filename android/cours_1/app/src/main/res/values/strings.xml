@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">myGreatApp</string>
+    <string name="welcome_text">myGreatApp</string>
+    <string name="hint_login">yololo</string>
+    <string name="loginbutton_text">Login</string>
+    <string name="signupbutton_text">Signup</string>
+</resources>
